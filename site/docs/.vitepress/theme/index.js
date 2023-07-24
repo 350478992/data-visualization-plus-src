@@ -1,5 +1,5 @@
 import DefaultTheme from 'vitepress/theme';
-import chuangda from '@moniya/dataVisual';
+import chuangda from '@moniya/data-visualization-plus';
 export default {
   ...DefaultTheme,
   enhanceApp: async ({ app }) => {

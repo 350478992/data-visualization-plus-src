@@ -75,8 +75,8 @@ button/index.ts
 
 ## 测试组件
 
-1. 可以直接在 play 项目中进行引入测试，需要引入@chuangda/dataVisual 组件，进入 play 目录，执行：
-   `pnpm add @chuangda/dataVisual`
+1. 可以直接在 play 项目中进行引入测试，需要引入@moniya/data-visualization-plus 组件，进入 play 目录，执行：
+   `pnpm add @moniya/data-visualization-plus`
 2. 导入组件
 
 全局引入，在 play/main.ts 中引入
@@ -84,7 +84,7 @@ button/index.ts
 ```
   import { createApp } from 'vue';
   import App from './App.vue';
-  import chuangda from '@chuangda/dataVisual';
+  import chuangda from '@moniya/data-visualization-plus';
   const app = createApp(App);
   app.use(chuangda);
   app.mount('#app');
@@ -92,7 +92,7 @@ button/index.ts
 
 局部引入：
 
-`import {CdButton} from '@chuangda/dataVisual'`
+`import {CdButton} from '@moniya/data-visualization-plus'`
 
 ## 组件测试
 
@@ -226,7 +226,7 @@ packages:
 ```
 
 7. 引入组件依赖
-   `pnpm add @chuangda/dataVisual`
+   `pnpm add @moniya/data-visualization-plus`
 8. 添加说明文档，在 docs 中新建 components/button/index.md,其他组件的说明文档以此类推，然后路径配置到 config.js 中
 
    ````

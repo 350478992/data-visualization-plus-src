@@ -15,7 +15,7 @@ export default defineConfig({
     // Vite路径别名配置
     alias: {
       '@': path.resolve(__dirname, '.', 'src'),
-      '@c': path.resolve(__dirname, '.', 'node_modules/@dataVisual/components/src'),
+      '@c': path.resolve(__dirname, '.', 'node_modules/@data-visualization-plus/components/src'),
     }
   },
   plugins: [

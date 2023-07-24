@@ -1,6 +1,6 @@
 import fs from 'fs';
 import { resolve } from 'path';
-import { pkgPath } from './paths';
+import { pkgPath, componentName } from './paths';
 //保留的文件
 const stayFile = ['package.json', 'README.md', '.gitignore'];
 
@@ -31,7 +31,7 @@ const delPath = async (path: string) => {
       }
     });
 
-    if (path != `${pkgPath}/dataVisual`) {
+    if (path != `${pkgPath}/${componentName}`) {
       fs.rmdirSync(path);
     }
   }

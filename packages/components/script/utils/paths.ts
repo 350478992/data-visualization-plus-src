@@ -5,3 +5,9 @@ export const componentPath = resolve(__dirname, '../../');
 
 //pkg根目录
 export const pkgPath = resolve(__dirname, '../../../');
+
+
+/**
+ * 组件库名称
+ */
+export const componentName = 'data-visualization-plus'

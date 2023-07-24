@@ -9,6 +9,8 @@ import DefineOptions from 'unplugin-vue-define-options/vite';
 // @ts-ignore
 import path from 'path'
 
+import {componentName} from "./script/utils/paths";
+
 export default defineConfig({
   test: {
     environment: 'happy-dom'
@@ -45,7 +47,7 @@ export default defineConfig({
           preserveModules: true,
           exports: 'named',
           //配置打包根目录
-          dir: '../dataVisual/es'
+          dir: `../${componentName}/es`
         },
         {
           //打包格式
@@ -56,13 +58,13 @@ export default defineConfig({
           preserveModules: true,
           exports: 'named',
           //配置打包根目录
-          dir: '../dataVisual/lib'
+          dir: `../${componentName}/lib`
         }
       ]
     },
     lib: {
       entry: 'index.ts',
-      name: 'dataVisual'
+      name: componentName
     }
   },
   plugins: [
@@ -70,7 +72,7 @@ export default defineConfig({
     vueJsx(),
     dts({
       entryRoot: './src',
-      outputDir: ['../dataVisual/es/src', '../dataVisual/lib/src'],
+      outputDir: [`../${componentName}/es/src`, `../${componentName}/lib/src`],
       //指定使用的tsconfig.json为我们整个项目根目录下,如果不配置,你也可以在components下新建tsconfig.json
       // tsConfigFilePath: '../../tsconfig.json',
     }),

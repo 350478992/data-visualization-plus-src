@@ -16,6 +16,6 @@
     "vue": "^3.2.36"
   },
   "dependencies": {
-    "@moniya/dataVisual": "workspace:^1.0.0"
+    "@moniya/data-visualization-plus": "workspace:^1.0.0"
   }
 }

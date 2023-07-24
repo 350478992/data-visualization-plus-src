@@ -14,7 +14,6 @@
 
 <script setup lang="ts">
 import TestComponent from '@/components/Test/Test.vue'
-import {Icon, SvgAnimation, SvgLogo, ProgressBar, FlyBox, Loading, Container} from '@moniya/dataVisual'
 </script>
 
 <style lang="less">

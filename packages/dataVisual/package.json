@@ -1,0 +1,36 @@
+{
+  "name": "@moniya/dataVisual",
+  "version": "1.0.0",
+  "main": "lib/index.js",
+  "module": "es/index.mjs",
+  "files": [
+    "es",
+    "lib"
+  ],
+  "keywords": [
+    "chaungda",
+    "vue3组件库"
+  ],
+  "sideEffects": [
+    "**/*.css"
+  ],
+  "author": "chengk",
+  "license": "MIT",
+  "description": "",
+  "typings": "lib/index.d.ts",
+  "publishConfig": {
+    "access": "public",
+    "registry": "https://registry.npmjs.org/"
+  },
+  "scripts": {
+    "release": "release-it"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/350478992/chuangda.git"
+  },
+  "dependencies": {
+    "@moniya/utils": "workspace:^1.0.0",
+    "uuid": "^9.0.0"
+  }
+}

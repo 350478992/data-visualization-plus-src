@@ -1,0 +1,48 @@
+
+.logo {
+  fill: none;
+  stroke: #333;
+  stroke-width: 5;
+  animation: logo 5s linear 1 forwards;
+}
+
+@keyframes logo {
+  0% {
+    fill: white;
+    stroke: #333;
+    stroke-dasharray: 6885;
+    stroke-dashoffset: 6885;
+  }
+  50% {
+    fill: white;
+    stroke: #333;
+    stroke-dasharray: 6885;
+    stroke-dashoffset: 0;
+  }
+  75% {
+    fill: red;
+    stroke: white;
+  }
+  100% {
+    fill: blue;
+    stroke: white;
+  }
+}
+
+.line-container {
+  .line {
+    stroke-dasharray: 400;
+    stroke-dashoffset: 400;
+    transition: stroke-dashoffset .5s ease-out;
+  }
+  &:hover {
+    .line {
+      stroke-dashoffset: 0;
+    }
+  }
+}
+.container {
+  svg {
+    border: 1px solid #000;
+  }
+}

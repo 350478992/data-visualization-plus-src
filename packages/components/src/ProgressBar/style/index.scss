@@ -1,0 +1,25 @@
+.circle {
+  animation: circle 5s linear infinite;
+}
+
+@keyframes circle {
+  from {
+    stroke-dasharray: 0 502;
+  }
+  to {
+    stroke-dasharray: 502 0;
+  }
+}
+
+.rect-process {
+  animation: rect-process 5s linear infinite;
+}
+
+@keyframes rect-process {
+  from {
+    stroke-dasharray: 0 800;
+  }
+  to {
+    stroke-dasharray: 800 0;
+  }
+}
